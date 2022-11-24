@@ -8,6 +8,7 @@ import { StudentEntryComponent } from './student-entry/student-entry.component';
 import { ViewStudentsComponent } from './view-students/view-students.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SearchStudentComponent } from './search-student/search-student.component';
 
 const myRoute: Routes=[
   {
@@ -21,6 +22,10 @@ const myRoute: Routes=[
   {
     path:"search",
     component:AddStudentComponent 
+  },
+  {
+    path:"delete",
+    component:SearchStudentComponent
   }
 ]
 @NgModule({
@@ -29,7 +34,8 @@ const myRoute: Routes=[
     StudentEntryComponent,
     ViewStudentsComponent,
     AddStudentComponent,
-    NavbarComponent
+    NavbarComponent,
+    SearchStudentComponent
   ],
   imports: [
     BrowserModule,
