@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { StudentEntryComponent } from './student-entry/student-entry.component';
 import { ViewStudentsComponent } from './view-students/view-students.component';
 import { AddStudentComponent } from './add-student/add-student.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute: Routes=[
   {
@@ -27,7 +28,8 @@ const myRoute: Routes=[
     AppComponent,
     StudentEntryComponent,
     ViewStudentsComponent,
-    AddStudentComponent
+    AddStudentComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
