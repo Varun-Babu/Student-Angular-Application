@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AddStudentComponent {
 
+  roll =""
+
+  readValue = () =>
+  {
+    let data:any = {"Id":this.roll}
+  }
 }

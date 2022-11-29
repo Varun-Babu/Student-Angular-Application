@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./search-student.component.css']
 })
 export class SearchStudentComponent {
+  roll =""
+
+  readValue = () =>
+  {
+    let data:any = {"roll":this.roll}
+  }
 
 }

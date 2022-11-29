@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchStudentComponent } from './search-student/search-student.component';
 import { FormsModule } from '@angular/forms';
 
+
 const myRoute: Routes=[
   {
     path:"",
@@ -36,7 +37,7 @@ const myRoute: Routes=[
     ViewStudentsComponent,
     AddStudentComponent,
     NavbarComponent,
-    SearchStudentComponent
+    SearchStudentComponent,
   ],
   imports: [
     BrowserModule,
