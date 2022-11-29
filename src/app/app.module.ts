@@ -9,6 +9,7 @@ import { ViewStudentsComponent } from './view-students/view-students.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchStudentComponent } from './search-student/search-student.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoute: Routes=[
   {
@@ -40,7 +41,8 @@ const myRoute: Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forChild(myRoute)
+    RouterModule.forChild(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
