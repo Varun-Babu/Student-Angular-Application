@@ -5,15 +5,32 @@
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <h1>Student Delete</h1>
+                    <h1>Student Search</h1>
                     <label for="" class="form-label">Student ID</label>
-                    <input name="roll" [(ngModel)] = "roll"  type="text" class="form-control">
+                    <input name="rollNo" [(ngModel)] ="rollNo"  type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button (click)="readValue()" class="btn btn-dark">Delete</button>
+                    <button (click)="readValue()" class="btn btn-dark">Search</button>
                 </div>
             </div>
         </div>
     </div>
+     <div class="row g-3" *ngFor="let j of searchData ">
+        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <label for="" class="form-label">Name</label>
+            <input value="{{j.name}}" type="text" class="form-control">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <label for="" class="form-label">Roll No</label>
+            <input value="{{j.rollNo}}"   type="text" class="form-control">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <label for="" class="form-label">Admission No</label>
+            <input value="{{j.admsnNo}}"  type="text" class="form-control">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <button (click)="deleteBtnClick(j.id)"  class="btn btn-danger">Delete</button>
+        </div>
+    </div> 
 </div>
 
